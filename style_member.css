@@ -1,0 +1,83 @@
+#info_member {
+    color: white;
+    display: flex;
+    /*aligné au centre */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    /*taille de l'image*/
+    height: auto;
+    width: 1200px;
+    border: 2px solid rgb(51, 255, 61);
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.username {
+    margin-top: 15px;
+    margin-left: 70px;
+    color: coral;
+    font-size: 300%;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////// MENU MEMBER////////////////////////////////////////////*/
+
+#menu_member {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 275px;
+}
+
+ul.menu_member_cl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(15, 15, 15);
+}
+
+
+/*/////////////////////////////////////////////////*/
+
+.text_info_member {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.fin_member {
+    margin-bottom: 30px;
+}
+
+#Big_Register_box {
+    margin-top: 20px;
+    border: 0px solid rgb(51, 255, 85);
+}
+
+#Information_box {
+    display: flex;
+    /*taille de l'image*/
+    margin-top: 00px;
+    margin-left: 20px;
+    height: auto;
+    width: 48%;
+    /*
+    border: 2px solid rgb(82, 51, 255);*/
+    /*alignement dans le cadre*/
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.title_reg {
+    margin-top: 5%;
+    font-size: 150%;
+    color: rgb(84, 165, 104);
+}
+
+.info_reg {
+    margin-top: 50px;
+    text-align: center;
+}

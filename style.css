@@ -1,0 +1,760 @@
+/*//////////////////////////////////////////////////////////// MENU //////////////////////////////////////////////////////*/
+
+.diamond_menu_image {
+    width: 150px;
+    margin-top: 1.5%;
+    display: block;
+}
+
+#menu_top {
+    display: flex;
+    /*aligné au centre */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    /*taille de l'image*/
+    height: 150px;
+    width: 1800px;
+    /*
+	border: 2px solid #f3f;
+	*/
+    /*alignement dans le cadre*/
+    justify-content: left;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#menu_top_choix {
+    /*taille de l'image*/
+    height: 150px;
+    width: 100%;
+}
+
+.menu_top {
+    position: relative;
+    top: 50px;
+    left: 2%;
+}
+
+ul.menu_top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(15, 15, 15);
+    width: 98%;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(0, 194, 0);
+}
+
+.active {
+    background-color: rgb(0, 194, 0);
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+    font-size: 125%;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////// LOGIN //////////////////////////////////////////////////////////////////////////*/
+
+
+/* Full-width input fields */
+
+.log_pop {
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+/* Set a style for all buttons */
+
+button.bouton_co {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.bouton_co:hover {
+    opacity: 0.8;
+}
+
+li button {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border: 0px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 105%;
+}
+
+button.container {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border: 0px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 105%;
+}
+
+li button:hover {
+    background-color: rgb(0, 194, 0);
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.cancelbtn:hover {
+    opacity: 0.8;
+}
+
+
+/* Center the image and position the close button */
+
+.container {
+    padding: 16px;
+}
+
+.psw {
+    float: right;
+    padding-top: 16px;
+    color: white;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    color: white;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 10%;
+}
+
+.psw_incorrect {
+    visibility: hidden;
+    color: red;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #2c2c2c;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+/*//////////////////////////////////////////////////////////// TRACK PAGE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#cherche_parameter_box {
+    color: white;
+    display: flex;
+    /*aligné au centre */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    /*taille de l'image*/
+    height: 150px;
+    width: 1200px;
+    border: 2px solid rgb(51, 255, 61);
+    flex-wrap: wrap;
+}
+
+.cherche {
+    /*taille de l'image*/
+    position: relative;
+    top: 1%;
+    /*top: 0px;
+    left: 0px;*/
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    /*
+    border: 2px solid rgb(255, 51, 204);*/
+    width: 13%;
+}
+
+.track {
+    position: relative;
+    left: 2%;
+    width: 12%;
+    margin-right: 3%;
+    margin-left: 0px;
+}
+
+input {
+    font-size: 105%;
+}
+
+select {
+    width: 100%;
+    font-size: 105%;
+    /*height: 50px;*/
+}
+
+.cherche_bouton {
+    position: relative;
+    width: 80%;
+    display: flex;
+    left: 2%;
+    /*
+    border: 2px solid rgb(255, 51, 204);*/
+    flex-direction: row;
+}
+
+.bp_shearch {
+    height: 70%;
+    width: 100px;
+    margin-right: 30px;
+    background-color: rgb(74, 201, 74);
+    color: white;
+    border: 0px;
+    font-size: 110%;
+}
+
+.bp_reset {
+    height: 70%;
+    width: 100px;
+    background-color: rgb(247, 161, 2);
+    color: white;
+    border: 0px;
+    font-size: 110%;
+    margin-right: 30px;
+}
+
+.option_member_select {
+    width: 120px;
+}
+
+.option_member {
+    width: 120px;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#result_box {
+    color: white;
+    display: flex;
+    /*aligné au centre */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    /*taille de l'image*/
+    height: auto;
+    width: 1500px;
+    /*
+    border: 2px solid rgb(51, 255, 85);*/
+    /*alignement dans le cadre*/
+    /*
+    justify-content: flex-start;
+    align-items: center;
+    */
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#nb_track_found {
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+#result_info_box {
+    color: white;
+    background-color: rgb(74, 201, 74);
+    display: flex;
+    /*aligné au centre */
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: -21px;
+    /*taille de l'image*/
+    height: 70px;
+    width: 100%;
+    /*
+    border: 2px solid rgb(255, 51, 187);*/
+    flex-wrap: wrap;
+}
+
+#track_found2 {
+    background-color: rgb(37, 37, 37);
+    /*
+    border: 2px solid rgb(255, 51, 187);*/
+    display: flex;
+    /*aligné au centre */
+    align-items: center;
+    margin-left: -40px;
+    margin-top: 1px;
+    /*taille de l'image*/
+    height: 100px;
+    width: 102.5%;
+    flex-wrap: wrap;
+}
+
+#track_found2:hover {
+    background-color: rgb(82, 82, 82);
+}
+
+#track_found1:hover {
+    background-color: rgb(82, 82, 82);
+}
+
+#track_found1 {
+    background-color: rgb(54, 54, 54);
+    /*
+    border: 2px solid rgb(255, 51, 187);*/
+    display: flex;
+    /*aligné au centre */
+    align-items: center;
+    margin-left: -40px;
+    margin-top: 1px;
+    /*taille de l'image*/
+    height: 100px;
+    width: 102.5%;
+    flex-wrap: wrap;
+}
+
+.miniature_info_result {
+    max-width: auto;
+    height: 98px;
+}
+
+.miniature_info_result_box {
+    width: 120px;
+}
+
+.miniature_info_result_box img:hover {
+    border: 2px solid #0edb2a;
+}
+
+.video_info {
+    width: 5%;
+    margin-left: 2.9%;
+    text-align: center;
+    /*
+    border: 2px solid rgb(51, 88, 255);*/
+}
+
+.name_info {
+    width: 10%;
+    margin-left: 4%;
+    text-align: center;
+    /*
+    border: 2px solid rgb(51, 88, 255);*/
+}
+
+.difficult_info {
+    width: 7%;
+    margin-left: 5%;
+    text-align: center;
+    /*
+    border: 2px solid rgb(51, 88, 255);*/
+}
+
+.type_info {
+    width: 15%;
+    margin-left: 5%;
+    text-align: center;
+    /*
+    border: 2px solid rgb(51, 88, 255);*/
+}
+
+.level_info {
+    width: 4%;
+    margin-left: 5%;
+    text-align: center;
+    /*
+    border: 2px solid rgb(51, 88, 255);*/
+}
+
+.ratio_info {
+    width: 8%;
+    margin-left: 5%;
+    text-align: center;
+    /*
+    border: 2px solid rgb(51, 88, 255);*/
+}
+
+.bike_info {
+    width: 10%;
+    margin-left: 5%;
+    text-align: center;
+    /*
+    border: 2px solid rgb(51, 88, 255);*/
+}
+
+.option_info {
+    width: 5%;
+    margin-left: 3%;
+    text-align: center;
+}
+
+.nb_track_found {
+    position: absolute;
+    top: 375px;
+    left: 330px;
+}
+
+#action_button_track {
+    display: flex;
+    /*aligné au centre */
+    margin-left: 0px;
+    margin-top: 0px;
+    /*taille de l'image*/
+    height: auto;
+    width: 100px;
+    /*
+    border: 2px solid rgb(51, 255, 85);*/
+    /*alignement dans le cadre*/
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.action_button_track {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 2px;
+    border: none;
+}
+
+.ok {
+    background-color: rgb(93, 204, 78);
+}
+
+.no_ok {
+    background-color: rgb(255, 255, 255);
+}
+
+.ok_lvl {
+    background-color: rgb(247, 161, 2);
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////// CONNEXION PAGE ///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#Big_Register_box {
+    color: white;
+    display: flex;
+    /*aligné au centre */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    /*taille de l'image*/
+    height: 480px;
+    width: 1050px;
+    border: 2px solid rgb(51, 255, 85);
+    /*alignement dans le cadre*/
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#Information_box {
+    display: flex;
+    /*taille de l'image*/
+    margin-top: 100px;
+    height: auto;
+    width: 48%;
+    /*
+    border: 2px solid rgb(82, 51, 255);*/
+    /*alignement dans le cadre*/
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#Register_box {
+    display: flex;
+    /*taille de l'image*/
+    height: 750px;
+    width: 48%;
+    /*
+    border: 2px solid rgb(255, 51, 194);*/
+    /*alignement dans le cadre*/
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#Register_box_info {
+    display: flex;
+    /*taille de l'image*/
+    height: 350px;
+    width: auto;
+    /*
+    border: 2px solid rgb(51, 255, 119);*/
+    /*alignement dans le cadre*/
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#Register_box_champs {
+    display: flex;
+    /*taille de l'image*/
+    height: 500px;
+    width: auto;
+    /*
+    border: 2px solid rgb(255, 51, 194);*/
+    /*alignement dans le cadre*/
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.title_reg {
+    margin-top: 5%;
+    font-size: 200%;
+    color: rgb(84, 165, 104);
+}
+
+.info_reg {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pseudo_reg {
+    margin-top: 10%;
+}
+
+.email_reg {
+    margin-top: 10%;
+}
+
+.password_reg {
+    margin-top: 10%;
+}
+
+.error {
+    color: red;
+}
+
+.bp_submit {
+    margin-left: 37.5%;
+    width: 25%;
+    margin-top: 15px;
+    background-color: rgb(74, 201, 74);
+    border: none;
+    color: white;
+}
+
+
+/*///////////////////////////////////////////////////////// Change lvl //////////////////////////////////////////////////*/
+
+.modal-content_lvl {
+    background-color: #2c2c2c;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 450px;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title_change_lvl {
+    color: white;
+    display: flex;
+    /*aligné au centre */
+    margin-left: auto;
+    margin-right: auto;
+    /*taille de l'image*/
+    height: auto;
+    width: auto;
+    /*
+    border: 2px solid rgb(51, 255, 85);*/
+    text-align: center;
+    /*alignement dans le cadre*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.send_lvl {
+    color: white;
+    display: flex;
+    /*aligné au centre */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*taille de l'image*/
+    height: auto;
+    width: auto;
+    /*
+    border: 2px solid rgb(51, 255, 85);*/
+    text-align: center;
+    /*alignement dans le cadre*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.input_lvl {
+    margin-right: 200px;
+}
+
+.title_lvl_change {
+    color: green;
+    font-size: 150%;
+}
+
+.bp_send {
+    margin-left: 10%;
+    width: auto;
+    background-color: rgb(74, 201, 74);
+    font-size: 150%;
+    border: none;
+    color: white;
+}
+
+.nb_invisible {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
